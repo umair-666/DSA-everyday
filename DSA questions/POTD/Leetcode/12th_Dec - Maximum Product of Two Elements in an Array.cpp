@@ -13,3 +13,16 @@ public:
         return (larger-1) * (large-1);
     }
 };
+
+// Python:
+
+// class Solution(object):
+//     def maxProduct(self, nums):
+//         """
+//         :type nums: List[int]
+//         :rtype: int
+//         """
+//         nums.sort()
+//         larger = nums[-1]
+//         large = nums[-2]
+//         return (larger-1) * (large-1)
