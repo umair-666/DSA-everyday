@@ -1,7 +1,7 @@
 // Max Sum without Adjacents
 // https://www.geeksforgeeks.org/problems/max-sum-without-adjacents2430/1
 
-// Memoized solution:
+// Memoized code:
 
 class Solution{
     int helper(int i , int n, int *arr, vector<int> &dp){
