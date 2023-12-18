@@ -11,7 +11,6 @@ class Solution {
         for(int i=0;i<N;i+=2){
             xo ^=A[i];
         }
-        
         return xo;
     }
 };
