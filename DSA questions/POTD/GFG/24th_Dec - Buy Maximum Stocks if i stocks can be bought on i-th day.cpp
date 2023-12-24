@@ -1,4 +1,11 @@
-  vector<pair<int,int>> a;
+// Buy Maximum Stocks if i stocks can be bought on i-th day
+// https://www.geeksforgeeks.org/problems/buy-maximum-stocks-if-i-stocks-can-be-bought-on-i-th-day/1
+
+class Solution {
+public:
+    int buyMaximumProducts(int n, int k, int price[]){
+        //Write your code here
+          vector<pair<int,int>> a;
         for(int i=0;i<n;i++){
             a.push_back({price[i],i+1});
         }
@@ -20,3 +27,5 @@
           
         }
         return count;
+    }
+};
