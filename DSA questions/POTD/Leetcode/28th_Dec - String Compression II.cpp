@@ -3,9 +3,7 @@
 
 class Solution {
 public:
-    
-    int getLength(int count)
-    {
+    int getLength(int count){
         if(count==1)return 1; 
         else{
             if(count<10)return 2; 
