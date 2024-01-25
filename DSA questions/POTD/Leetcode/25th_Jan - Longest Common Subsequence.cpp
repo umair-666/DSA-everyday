@@ -5,7 +5,7 @@
 
 class Solution {
 public:
-    int longestCommonSubsequence(string S1, string S2) {
+    int longestCommonSubsequence(string S1, string S2){
         
         int n = S1.length();
         int m = S2.length();
