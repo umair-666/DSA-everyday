@@ -1,7 +1,7 @@
 //1143. Longest Common Subsequence
 //https://leetcode.com/problems/longest-common-subsequence/description/?envType=daily-question&envId=2024-01-25
 
-// Approach 3: Space Optimized:
+// Approach 3: Space Optimized :
 
 class Solution {
 public:
