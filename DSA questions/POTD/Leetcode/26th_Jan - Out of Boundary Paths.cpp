@@ -20,3 +20,25 @@ public:
     }
 };
 
+// Approach 2: Memoized
+
+class Solution {
+    const int M = 1e9 + 7;
+private:
+    int findPaths(int m, int n, int N, int i, int j, vector<vector<vector<int>>>& dp) {
+        if (i == m || j == n || i < 0 || j < 0) return 1;
+        if (N == 0) return 0;
+        if (dp[i][j][N] != -1) return dp[i][j][N];
+
+        dp[i][j][N] = (
+            (findPaths(m, n, N - 1, i - 1, j, dp) + findPaths(m, n, N - 1, i + 1, j, dp)) % M +
+            (findPaths(m, n, N - 1, i, j - 1, dp) + findPaths(m, n, N - 1, i, j + 1, dp)) % M) % M;
+
+        return dp[i][j][N];
+    }
+public:
+    int findPaths(int m, int n, int N, int i, int j) {
+        vector<vector<vector<int>>> dp(m, vector<vector<int>>(n, vector<int>(N + 1, -1)));
+        return findPaths(m, n, N, i, j, dp);
+    }
+};
