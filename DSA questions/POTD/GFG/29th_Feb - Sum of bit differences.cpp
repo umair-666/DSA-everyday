@@ -5,7 +5,7 @@ class Solution{
 public:
 	
 	long long sumBitDifferences(int arr[], int n) {
-	     long long ans = 0;
+	     long long res = 0;
 	    
 	    for(int bit = 1; bit < 32; bit++) {
 	        long long one = 0, zero = 0;
@@ -17,10 +17,10 @@ public:
 	            arr[i] = arr[i] >> 1;
 	        }
 	        
-	        ans = ans + (one * zero);
+	        res = res + (one * zero);
 	    }
 	    
-	    ans = ans * 2;
-	    return ans;
+	    res = res * 2;
+	    return res;
 	}
 };
