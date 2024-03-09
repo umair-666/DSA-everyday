@@ -2,7 +2,7 @@
 // https://www.geeksforgeeks.org/problems/find-the-n-th-character5925/1
 
 // TLE:
-class Solution{
+class Solution{ 
   public:
     char nthCharacter(string s, int r, int n) {
         
