@@ -19,9 +19,7 @@ class Solution{
         }
         return val;
     }
-    public:
-    
-    /*You are required to complete below function */
+public:
     int kthCommonAncestor(Node *root, int k,int x, int y){
         
          return fun(root,x,y,k);
