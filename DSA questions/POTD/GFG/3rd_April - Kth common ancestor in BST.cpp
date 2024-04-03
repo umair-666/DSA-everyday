@@ -3,7 +3,7 @@
 
 class Solution{
      int fun(Node * root,int x,int y ,int &k){
-        if(root==NULL){
+        if(!root){
             return -1;
         }
         int val=-1;
