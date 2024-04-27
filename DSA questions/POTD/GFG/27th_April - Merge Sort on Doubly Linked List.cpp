@@ -3,7 +3,6 @@
 
 class Solution {
   public:
-    // Function to sort the given doubly linked list using Merge Sort.
     struct Node *sortDoubly(struct Node *head) {
        vector<int> v;
         Node *temp = head;
