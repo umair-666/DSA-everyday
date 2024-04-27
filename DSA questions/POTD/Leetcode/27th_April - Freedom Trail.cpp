@@ -2,7 +2,6 @@
 // https://leetcode.com/problems/freedom-trail/description/?envType=daily-question&envId=2024-04-27
 
 class Solution {
-    // Find the minimum steps between two indexes of ring
     int countSteps(int curr, int next, int ringLength) {
         int stepsBetween = abs(curr - next);
         int stepsAround = ringLength - stepsBetween;
