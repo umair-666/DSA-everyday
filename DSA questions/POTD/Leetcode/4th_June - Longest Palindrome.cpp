@@ -1,0 +1,23 @@
+// 409. Longest Palindrome
+// https://leetcode.com/problems/longest-palindrome/description/?envType=daily-question&envId=2024-06-04
+
+class Solution {
+public:
+    int longestPalindrome(const std::string& s) {
+        unordered_set<char> charSet;
+        int length = 0;
+        
+        for (char c : s) {
+            if (charSet.find(c) != charSet.end()) {
+                charSet.erase(c);
+                length += 2;
+            } else
+                charSet.insert(c);
+        }
+        
+        if (!charSet.empty())
+            length += 1;
+        
+        return length;
+    }
+};
