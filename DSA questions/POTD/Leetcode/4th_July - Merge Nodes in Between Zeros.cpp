@@ -4,7 +4,7 @@
 class Solution {
 public:
     ListNode* mergeNodes(ListNode* head) {
-        // Start with the first non-zero value.
+        
         head = head->next;
         if (!head)
             return head;
