@@ -17,7 +17,6 @@ public:
                 // Reverse the substring between the matching parentheses
                 reverse(result.begin() + start, result.end());
             } else {
-                // Append non-parenthesis characters to the processed string
                 result += currentChar;
             }
         }
